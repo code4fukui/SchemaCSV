@@ -1,0 +1,14 @@
+name,type,example,description
+開設予定大学等,integer,1,ID
+開設予定年度,integer,2023
+大学等区分,string,高等専門学校
+区分,string,私立
+大学等名,string,神山まるごと高専
+学部学科等名,string,デザイン・エンジニアリング学科
+入学定員,integer,40
+位置,string,徳島県神山町
+設置者,string,神山学園
+附帯事項,array?
+附帯事項.附帯事項,string,プログラミング大事
+附帯事項.附帯事項区分,string,助言事項
+備考,string?,特になし

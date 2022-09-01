@@ -1,0 +1,79 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "NewCollege",
+  "type": "object",
+  "properties": {
+    "開設予定大学等": {
+      "type": "integer",
+      "example": "1",
+      "description": "ID"
+    },
+    "開設予定年度": {
+      "type": "integer",
+      "example": "2023"
+    },
+    "大学等区分": {
+      "type": "string",
+      "example": "高等専門学校"
+    },
+    "区分": {
+      "type": "string",
+      "example": "私立"
+    },
+    "大学等名": {
+      "type": "string",
+      "example": "神山まるごと高専"
+    },
+    "学部学科等名": {
+      "type": "string",
+      "example": "デザイン・エンジニアリング学科"
+    },
+    "入学定員": {
+      "type": "integer",
+      "example": "40"
+    },
+    "位置": {
+      "type": "string",
+      "example": "徳島県神山町"
+    },
+    "設置者": {
+      "type": "string",
+      "example": "神山学園"
+    },
+    "附帯事項": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "附帯事項": {
+            "type": "string",
+            "example": "プログラミング大事"
+          },
+          "附帯事項区分": {
+            "type": "string",
+            "example": "助言事項"
+          }
+        },
+        "required": [
+          "附帯事項",
+          "附帯事項区分"
+        ]
+      }
+    },
+    "備考": {
+      "type": "string",
+      "example": "特になし"
+    }
+  },
+  "required": [
+    "開設予定大学等",
+    "開設予定年度",
+    "大学等区分",
+    "区分",
+    "大学等名",
+    "学部学科等名",
+    "入学定員",
+    "位置",
+    "設置者"
+  ]
+}

@@ -13,6 +13,13 @@ await Deno.writeTextFile("./NewCollege.schema.json", JSON.stringify(schema, null
 console.log(schema);
 ```
 
+## Spec
+
+- name
+- type - type of JSON Scheam, with '?' for not required
+- example
+- description
+
 ## Dependency
 
 - [JSONSchema.js](https://github.com/code4fukui/JSONSchema)

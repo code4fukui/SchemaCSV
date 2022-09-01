@@ -1,16 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "NewCollege",
   "type": "object",
   "properties": {
     "開設予定大学等": {
       "type": "integer",
-      "example": "1",
+      "example": 1,
       "description": "ID"
     },
     "開設予定年度": {
       "type": "integer",
-      "example": "2023"
+      "example": 2023
     },
     "大学等区分": {
       "type": "string",
@@ -30,7 +29,7 @@
     },
     "入学定員": {
       "type": "integer",
-      "example": "40"
+      "example": 40
     },
     "位置": {
       "type": "string",

@@ -4,7 +4,7 @@ import { SchemaCSV } from "./SchemaCSV.js";
 import { schema2dts } from "https://code4fukui.github.io/JSONSchema/schema2dts.js";
 
 Deno.test("simple", async () => {
-  const sc = await SchemaCSV.toSchema("./demo/NewCollege.schema.csv");
+  const sc = await SchemaCSV.fromCSVFile("./demo/NewCollege.schema.csv");
   const url = "https://codeforkosen.github.io/newcollege/newcollege202208.json";
   const d = (await (await fetch(url)).json())[0];
   //console.log(d);

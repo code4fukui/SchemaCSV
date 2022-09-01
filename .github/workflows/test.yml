@@ -1,0 +1,13 @@
+name: deno-test
+
+on: [pull_request, push]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    steps:
+      - uses: actions/checkout@master
+      - uses: denoland/setup-deno@v1
+      - name: Do `deno test`
+        run: deno test

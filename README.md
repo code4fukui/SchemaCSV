@@ -15,8 +15,8 @@ console.log(schema);
 
 ## Spec
 
-- name
-- type - type of JSON Scheam, with '?' for not required
+- name - with '.' for the hierarchical structure
+- type - type of JSON Scheam, ends with '?' for not required
 - example
 - description
 

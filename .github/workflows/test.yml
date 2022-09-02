@@ -10,4 +10,4 @@ jobs:
       - uses: actions/checkout@master
       - uses: denoland/setup-deno@v1
       - name: Do `deno test`
-        run: deno test
+        run: deno test -A

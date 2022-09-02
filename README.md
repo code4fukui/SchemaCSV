@@ -16,7 +16,7 @@ console.log(schema);
 ## Spec
 
 - name - with '.' for the hierarchical structure
-- type - type of JSON Scheam, ends with '?' for not required
+- type - string | number | integer | boolean | array | object | null, [type of JSON Scheam](https://json-schema.org/understanding-json-schema/reference/type.html), ends with '?' for not required
 - example
 - description
 

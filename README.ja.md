@@ -19,7 +19,7 @@ CSV形式で記述されたスキーマから[JSON Schema](https://json-schema.o
 
 ## 使い方
 ```javascript
-import { SchemaCSV } from "https://code4fukui.github.io/SchemaCSV/SchemaCSV.js";
+import { SchemaCSV } from "https://github.com/code4fukui/SchemaCSV";
 
 const schema = await SchemaCSV.fromCSVFile("./NewCollege.schema.csv");
 await Deno.writeTextFile("./NewCollege.schema.json", JSON.stringify(schema, null, 2));

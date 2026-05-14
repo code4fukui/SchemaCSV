@@ -21,7 +21,7 @@ This project requires [Deno](https://deno.land) to run.
 
 ## Usage
 ```javascript
-import { SchemaCSV } from "https://code4fukui.github.io/SchemaCSV/SchemaCSV.js";
+import { SchemaCSV } from "https://github.com/code4fukui/SchemaCSV";
 
 const schema = await SchemaCSV.fromCSVFile("./NewCollege.schema.csv");
 await Deno.writeTextFile("./NewCollege.schema.json", JSON.stringify(schema, null, 2));
